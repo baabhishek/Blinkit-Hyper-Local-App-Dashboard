@@ -54,7 +54,11 @@ This repository contains a detailed sales analytics dashboard created for Blinki
   Tier 3 outlet locations are leading sales growth, with small outlets showing the highest sales, particularly in supermarket type 1 outlets.
 
 ### Suggestions for Further Analysis
-- Competitive Analysis: Explore the impact of new market players on Blinkit's sales by comparing sales trends before and after their entry.
+- Competitive Analysis:
+  
+  <img width="678" alt="Screenshot 2567-07-21 at 3 56 11 AM" src="https://github.com/user-attachments/assets/034cebb9-0f7d-4cbd-a44a-5cd82d0f6c19">
+
+   Explore the impact of new market players on Blinkit's sales by comparing sales trends before and after their entry.
 - Customer Behavior: Analyze customer purchase patterns and preferences to identify opportunities for targeted marketing and promotions.
 - Inventory Optimization: Use sales data to optimize inventory levels and reduce stockouts or overstock situations.
 - Regional Performance: Conduct a deeper analysis of sales performance across different regions to identify high-growth areas and potential markets for expansion.
