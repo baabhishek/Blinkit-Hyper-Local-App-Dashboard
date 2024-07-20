@@ -1,0 +1,60 @@
+(base) abhisheksenapati@Abhisheks-MacBook-Pro ~ % >....                                                                                                                                                     
+<script type="text/javascript" src="https://content.powerapps.com/resource/powerbiwfe/scripts/web.clients.min.fce78f74b63042bdb2bb.js"  onerror=cdnFallback(event) ></script>
+<script type="text/javascript">this.parseTimeMarkers['web.clients.min.js'].end = Date.now();</script>
+<script type="text/javascript">this.parseTimeMarkers = this.parseTimeMarkers || {}; this.parseTimeMarkers['web.min.js'] = { nominalStart: Date.now(), start: Date.now(), initial: true }; </script>
+<script type="text/javascript" src="https://content.powerapps.com/resource/powerbiwfe/scripts/web.min.17c54a2766889248745a.js"  onerror=cdnFallback(event) ></script>
+<script type="text/javascript">this.parseTimeMarkers['web.min.js'].end = Date.now();</script>
+
+
+    <script type="text/javascript">
+        var app = window.web;
+        // In iOS the existance of the meta tag will cause the native banner to appear.
+        // If a certain meta tag doesn't exist for a particular environment, the banner will not show.
+        // We will need to force the type to windows-phone (which is not supported and there for will not be compermised)
+        // and override the link url using a different tag.
+        const isIOS = () => {
+            return [
+                'iPad Simulator',
+                'iPhone Simulator',
+                'iPad',
+                'iPhone',
+            ].includes(navigator.platform)
+            // iPad on iOS 13 detection
+            || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+        }
+
+        const isArtifactLanding = true;
+        if ($.smartbanner) {
+            $.smartbanner({
+                title: 'Power BI',
+                author: 'Microsoft',
+                icon: powerbi.build + '/images/android_banner_appIcon.png',
+                force: isIOS() && isArtifactLanding ? 'windows-phone' : undefined,
+                inWindowsStore: isIOS() && isArtifactLanding ? 'On the App Store' : undefined
+            });
+        }
+    </script>
+
+    <script type="text/javascript">
+        document.onreadystatechange = () => upsertApplicationStateChange(document.readyState);
+        document.addEventListener('DOMContentLoaded', () => upsertApplicationStateChange("documentContentLoaded"));
+        window.addEventListener('load', () => upsertApplicationStateChange('windowLoaded'));
+
+        function upsertApplicationStateChange(state) {
+
+            if (!window.applicationState) {
+                window.applicationState = {};
+            }
+
+            var timestamp = new Date().getTime();
+            if (window.performance && window.performance.timeOrigin && window.performance.now) {
+                timestamp = window.performance.timeOrigin + window.performance.now();
+            }
+
+            window.applicationState[state] = timestamp;
+        }
+    </script>
+
+</body>
+</html>
+
