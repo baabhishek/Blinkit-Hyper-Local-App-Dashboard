@@ -27,6 +27,11 @@ This repository contains a detailed sales analytics dashboard created for Blinki
 - Sales: Sales figures for the items.
 - Rating: Customer ratings for the items and outlets.
 
+### Tools Used:
+| Power BI | Excel | 
+|----------|---------|
+| <img src="https://www.coolblue.com/wp-content/uploads/2022/09/Microsoft-Power-BI-Symbol.png" title=“PowerBI” alt="PowerBI" width="60" height="35"/> |<img src="https://cdn.icon-icons.com/icons2/2397/PNG/512/microsoft_office_excel_logo_icon_145720.png" title=“Excel” alt=“Excel” width="35" height="35"/> |
+
 ### Key Metrics
 <img width="423" alt="Screenshot 2567-07-21 at 1 18 40 AM" src="https://github.com/user-attachments/assets/15a36049-0313-4761-a576-cedd89136b83">
 
